@@ -10,8 +10,18 @@
     <nav>
         <ul>
             <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('options') }}">Options</a></li>
+            <!-- Dropdown Menu -->
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Options</a>
+                <div class="dropdown-content">
+                    <a href="{{ url_for('notes') }}">Notes</a>
+                    <a href="{{ url_for('other_option1') }}">Other Option 1</a>
+                    <a href="{{ url_for('other_option2') }}">Other Option 2</a>
+                    <!-- Add more links here -->
+                </div>
+            </li>
             <li><a href="{{ url_for('about') }}">About Me</a></li>
+            <li><a href="{{ url_for('upload') }}">Upload</a></li>
         </ul>
     </nav>
     <h1>About Me</h1>
